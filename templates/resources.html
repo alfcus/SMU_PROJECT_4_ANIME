@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works Cited</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" href="../static/css/menubar.css">
+</head>
+<body>
+  <header>
+    <a href="/" class="logo">Anime Recommender</a>
+    <div class="right">
+      <div class="btns dayNight">
+        <ion-icon name="moon-outline"></ion-icon>
+        <ion-icon name="sunny-outline"></ion-icon>
+      </div>
+      <div class="btns menuToggle">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+    </div>
+  </header>
+  <ul class="navigation">
+    <li><a href="/" class="active">Home</a></li>
+    <li><a href="/about">About Us</a></li>
+    <li><a href="/tableau">Tableau</a></li>
+    <li><a href="/recommender">Recommender</a></li>
+    <li><a href="/data">Data Table</a></li>
+    <li><a href="/resources">Works Cited</a></li>
+    <li><a href="/writeup">Write-up</a></li>
+  </ul>
+  <section class="container04">
+    <h1>Kaggle Links:</h1>
+    <h2><a href="https://www.kaggle.com/hernan4444/anime-recommendation-database-2020?select=anime.csv">Data Set</a> - MyAnimeList Database 2020</h2>
+    <h2><a href="https://www.kaggle.com/hernan4444/anime-content-collaborative-knn">KNN Model</a> - Anime - Content & Collaborative - KNN</h2>
+    <br>
+    <h1>Tableau Inspiration:</h1>
+    <h2><a href="https://public.tableau.com/app/profile/sakib.mahmud1560/viz/AnimeAnalyticsthroughStudios/AnimeAnalyticsDashboard">Dashboard Ideas</a> - Anime Analytics</h2>
+    <br>
+    <h1>Understanding KNN:</h1>
+    <h2><a href="https://realpython.com/knn-python/">KNN Breakdown</a> - How KNN works and ways to optimize the model</h2>
+    <h2><a href="https://scikit-learn.org/stable/modules/neighbors.html">NearestNeighbors</a> - Using unsupervised nearest neighbors</h2>
+    <h2><a href="https://www.kdnuggets.com/2020/11/most-popular-distance-metrics-knn.html">Metric Hyperparameters</a> - Explanation of different distance calculations</h2>
+    <br>
+    <h1>Animes used on this site:</h1>
+    <h2>Demon Slayer</h2>
+    <h2>Hotarubi no Mori e</h2>
+    <h2>Rurouni Kenshin</h2>
+    <h2>Inuyasha</h2>
+    <h2>Pokémon</h2>
+    <h2>Fruits Basket</h2>
+    <h2>Hunter x Hunter</h2>
+    <h2>Attack on Titan</h2>
+    <h2>whatever else I missed =(</h2>
+
+    
+  </section>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    let menuToggle = document.querySelector('.menuToggle');
+    let dayNight = document.querySelector('.dayNight');
+    let body = document.querySelector('body');
+    let navigation = document.querySelector('.navigation');
+    menuToggle.onclick = function(){
+      menuToggle.classList.toggle('active')
+      navigation.classList.toggle('active')
+    }
+    dayNight.onclick = function(){
+      dayNight.classList.toggle('active')
+      body.classList.toggle('dark')
+    }
+  </script>
+
+
+</body>
+</html>
